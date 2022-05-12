@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <title>Home</title>
+    <link rel="icon" type="favicon" href="/images/Favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--Navigation Bar-->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo">Michael O'Dwyer<img src="/images/Logo.png" width="40px" height ="35px" style="margin: 10px;" ></a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/index.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/personal.html" class="navbar__links">Personal</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/professional.html" class="navbar__links">Professional</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="#contact__scroll" class="button">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!--Main-->
+    <div class="main">
+        <div class="main__background">
+            <img src="/images/Out.JPG">
+        </div>
+        <div class="main__typewriter">
+            <strong><span class="type"></span></strong>
+        </div>
+    </div>
+
+
+    <!--Services Section-->
+    <div class="services">
+        <h1>See what I am about</h1>
+        <div class="services__container">
+            <div class="services__card">
+                <h2>Professional</h2>
+                <p>Education & Background</p>
+                <a href="/professional.html"><button>Go</button></a>
+            </div>
+            <div class="services__card">
+                <h2>Personal</h2>
+                <p>What I'm About</p>
+                <a href="/personal.html"><button>Go</button></a>
+            </div>
+        </div>
+        <div id="contact__scroll"></div>
+    </div>
+
+
+    <!--Footer-->
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="contact__container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><img src="/images/Location.png" width="60%" height="60%"></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>2504 San Gabriel St Apt 403,<br>Austin,<br>TX 78705</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><img src="/images/Phone.png" width="60%" height="60%"></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>(737) 217-4402</p>
+                    </div>  
+                </div>
+                <div class="box">
+                    <div class="icon"><img src="/images/Mail.png" width="60%" height="60%"></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>michaelodwyer890@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form action="mail.php" method="POST">
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="name" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="email" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="message" required="required" ></textarea>
+                        <span>Type Your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="footer__container">
+        <div class="social__icons">
+                <a href="https://www.linkedin.com/in/michael-o-dwyer-405454213/" id="social__icons--link"> <img src="/images/LinkedIn.png" width="40px" height ="35px" style="margin: 10px;" ></a>
+                <a href="https://github.com/MichaelOD766" id="social__icons--link"> <img src="/images/Github.png" width="40px" height ="35px" style="margin: 10px;" ></a>
+                <a href="#contact__scroll" id="social__icons--link"> <img src="/images/Mail.png" width="40px" height ="35px" style="margin: 10px;" ></a>
+        </div>
+        <p>This Site Was Created By Michael :)</p>
+        <p>The photos displayed were also by Michael</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
